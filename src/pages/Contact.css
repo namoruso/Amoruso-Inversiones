@@ -332,26 +332,38 @@
 
 @media (max-width: 768px) {
   .contact-cards-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contact-cards-grid {
+    gap: var(--spacing-md);
   }
 
   .contact-card {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-md);
   }
 
   .contact-card-icon {
-    width: 70px;
-    height: 70px;
-    font-size: 1.8rem;
+    width: 65px;
+    height: 65px;
+    font-size: 1.7rem;
+    margin-bottom: var(--spacing-md);
   }
 
   .contact-card-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
   }
 
-  .contact-card-link,
+  .contact-card-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.3rem;
+    word-break: break-word;
+  }
+
   .contact-card-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .address-card {
@@ -404,40 +416,88 @@
 @media (max-width: 480px) {
   .contact-cards-section,
   .map-address-section {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
+  }
+
+  .contact-cards-grid {
+    gap: var(--spacing-sm);
   }
 
   .contact-card {
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-sm);
   }
 
   .contact-card-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-md);
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-sm);
   }
 
   .contact-card-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-card-link {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.2rem;
+  }
+
+  .contact-card-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 
   .address-card {
-    padding: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .address-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
+
+  .address-title {
+    font-size: 1.3rem;
+  }
+
+  .address-text {
+    font-size: 0.9rem;
   }
 
   .address-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 0.75rem 1.3rem;
+    font-size: 0.9rem;
   }
 
   .map-container {
-    min-height: 300px;
+    min-height: 280px;
   }
 
   .social-link {
-    width: 45px;
-    height: 45px;
-    font-size: 1.3rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .cta-banner-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+
+  .cta-banner-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .cta-banner-text p {
+    font-size: 0.85rem;
+  }
+
+  .cta-banner-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
