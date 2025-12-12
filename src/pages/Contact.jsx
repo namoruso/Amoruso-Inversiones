@@ -10,21 +10,21 @@ const Contact = () => {
       icon: 'fa-phone-alt',
       title: 'Teléfonos',
       items: CONTACT_INFO.phones,
-      color: '#06d6a0',
+      color: 'linear-gradient(135deg, var(--primary), #ff6b7a)',
       type: 'phone'
     },
     {
       icon: 'fa-envelope',
       title: 'Email',
       items: [CONTACT_INFO.email],
-      color: '#4cc9f0',
+      color: 'linear-gradient(135deg, var(--primary), #ff6b7a)',
       type: 'email'
     },
     {
       icon: 'fa-clock',
       title: 'Horario',
       items: [CONTACT_INFO.schedule.weekdays, CONTACT_INFO.schedule.saturday],
-      color: '#ffd60a',
+      color: 'linear-gradient(135deg, var(--primary), #ff6b7a)',
       type: 'schedule'
     }
   ];

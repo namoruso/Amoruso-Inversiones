@@ -306,6 +306,8 @@
   .contact-cards-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .map-address-grid {
@@ -329,23 +331,113 @@
 }
 
 @media (max-width: 768px) {
+  .contact-cards-section {
+    padding: var(--spacing-xl) 0;
+  }
+
   .contact-card {
-    padding: var(--spacing-xl);
-  }
-
-  .address-card {
-    padding: var(--spacing-xl);
-  }
-
-  .map-container {
-    min-height: 400px;
-  }
-
-  .cta-banner-content {
     padding: var(--spacing-lg);
   }
 
-  .cta-banner-text h3 {
+  .contact-card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+
+  .contact-card-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-card-link,
+  .contact-card-text {
+    font-size: 0.95rem;
+  }
+
+  .address-card {
+    padding: var(--spacing-lg);
+  }
+
+  .address-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+
+  .address-title {
     font-size: 1.5rem;
+  }
+
+  .address-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .map-container {
+    min-height: 350px;
+  }
+
+  .cta-banner-content {
+    padding: var(--spacing-md);
+  }
+
+  .cta-banner-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .cta-banner-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .cta-banner-text p {
+    font-size: 0.95rem;
+  }
+
+  .cta-banner-btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-cards-section,
+  .map-address-section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contact-card {
+    padding: var(--spacing-md);
+  }
+
+  .contact-card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contact-card-title {
+    font-size: 1.2rem;
+  }
+
+  .address-card {
+    padding: var(--spacing-md);
+  }
+
+  .address-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .map-container {
+    min-height: 300px;
+  }
+
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
   }
 }
