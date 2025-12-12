@@ -8,7 +8,7 @@ import './styles/global.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Amoruso-Inversiones/">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
