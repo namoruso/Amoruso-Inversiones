@@ -100,7 +100,7 @@ const Contact = () => {
               
               <div className="address-actions">
                 <a 
-                  href={CONTACT_INFO.map}
+                  href={CONTACT_INFO.mapDirections}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="address-btn"
