@@ -15,6 +15,9 @@
 .btn-text {
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .btn-shine {
