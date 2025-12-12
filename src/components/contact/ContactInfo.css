@@ -1,0 +1,108 @@
+.contact-info-container {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-info-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-item {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--white);
+  font-size: 1.2rem;
+  transition: all var(--transition-normal);
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h5 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.contact-text p {
+  color: #666;
+  margin: 0 0 5px 0;
+  line-height: 1.6;
+}
+
+.contact-socials {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-socials h5 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-social-icons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.contact-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--white);
+  font-size: 1.3rem;
+  transition: all var(--transition-normal);
+}
+
+.contact-social-icon:hover {
+  transform: translateY(-5px) rotate(360deg);
+  box-shadow: 0 10px 20px rgba(230, 57, 70, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contact-info-container {
+    padding: var(--spacing-lg);
+  }
+
+  .contact-icon {
+    min-width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .contact-social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}

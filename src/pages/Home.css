@@ -1,0 +1,132 @@
+.home-page {
+  width: 100%;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.15rem;
+  margin: -var(--spacing-lg) auto var(--spacing-xl);
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.section-subtitle.light {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.service-wrapper {
+  position: relative;
+}
+
+.service-badge-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, var(--primary), #ff6b7a);
+  color: var(--white);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+  pointer-events: none;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+}
+
+.testimonials-section {
+  background: linear-gradient(rgba(29, 53, 87, 0.97), rgba(29, 53, 87, 0.97)), 
+              url('/images/backgrounds/fondoresena.jpg') center/cover fixed;
+  color: var(--white);
+}
+
+.testimonials-section .section-title,
+.testimonials-section h2,
+.testimonials-section h3 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.final-cta-section {
+  padding: var(--spacing-2xl) 0;
+  background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(230, 57, 70, 0.1) 0%, transparent 70%);
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.final-cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+}
+
+.final-cta-description {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .services-preview-grid {
+    grid-template-columns:1fr;
+    gap: var(--spacing-md);
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem;
+    margin: -var(--spacing-md) auto var(--spacing-lg);
+  }
+
+  .final-cta-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .final-cta-description {
+    font-size: 1.05rem;
+  }
+}
