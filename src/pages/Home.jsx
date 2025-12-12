@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/assetHelper';
 import Hero from '../components/common/Hero';
 import SectionTitle from '../components/common/SectionTitle';
 import Button from '../components/common/Button';
@@ -43,7 +44,7 @@ const Home = () => {
       <Hero
         title="Amoruso Inversiones C.A."
         description="Ofrecemos los mejores servicios de reparación y mantenimiento para su vehículo con la más alta calidad y garantía. Nuestro equipo de profesionales está a su disposición."
-        backgroundImage="/images/backgrounds/motor.jpg"
+        backgroundImage={getAssetPath("/images/backgrounds/motor.jpg")}
       >
         <Link to="/servicios">
           <Button size="large">Descubre Nuestros Servicios</Button>

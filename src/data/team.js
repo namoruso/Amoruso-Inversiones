@@ -1,9 +1,11 @@
+import { getAssetPath } from '../utils/assetHelper';
+
 export const team = [
   {
     id: 1,
     name: "Leonardo Amoruso",
     position: "Fundador y Jefe de Mecánicos",
-    image: "/images/logo/logo-small.jpg",
+    image: getAssetPath("/images/logo/logo-small.jpg"),
     social: {
       facebook: "#",
       instagram: "https://www.instagram.com/amorusoinversiones_c.a/",
@@ -14,7 +16,7 @@ export const team = [
     id: 2,
     name: "Rocco Amoruso",
     position: "Fundador y Jefe de Mecánicos",
-    image: "/images/logo/logo-small.jpg",
+    image: getAssetPath("/images/logo/logo-small.jpg"),
     social: {
       facebook: "#",
       instagram: "https://www.instagram.com/amorusoinversiones_c.a/",
@@ -25,7 +27,7 @@ export const team = [
     id: 3,
     name: "Técnico Especializado",
     position: "Mecánico Senior",
-    image: "/images/logo/logo-small.jpg",
+    image: getAssetPath("/images/logo/logo-small.jpg"),
     social: {
       facebook: "#",
       instagram: "#",
@@ -36,7 +38,7 @@ export const team = [
     id: 4,
     name: "Técnico Certificado",
     position: "Mecánico",
-    image: "/images/logo/logo-small.jpg",
+    image: getAssetPath("/images/logo/logo-small.jpg"),
     social: {
       facebook: "#",
       instagram: "#",

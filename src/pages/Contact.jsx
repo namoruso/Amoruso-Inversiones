@@ -1,4 +1,5 @@
 import { motion as Motion } from 'framer-motion';
+import { getAssetPath } from '../utils/assetHelper';
 import Hero from '../components/common/Hero';
 import { CONTACT_INFO } from '../utils/constants';
 import './Contact.css';
@@ -34,7 +35,7 @@ const Contact = () => {
       <Hero
         title="Contáctenos"
         description="Estamos aquí para ayudarte. Elige la forma que prefieras para comunicarte con nosotros."
-        backgroundImage="/images/backgrounds/fondocontacto.jpg"
+        backgroundImage={getAssetPath("/images/backgrounds/fondocontacto.jpg")}
       />
 
       {/* Contact Cards Section */}

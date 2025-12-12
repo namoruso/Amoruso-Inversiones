@@ -1,5 +1,6 @@
 import { motion as Motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { getAssetPath } from '../utils/assetHelper';
 import Hero from '../components/common/Hero';
 import SectionTitle from '../components/common/SectionTitle';
 import TeamCard from '../components/about/TeamCard';
@@ -65,7 +66,7 @@ const About = () => {
       <Hero
         title="Nuestra Empresa"
         description="Conoce la historia, valores y el equipo que hace de Amoruso Inversiones C.A. tu taller de confianza."
-        backgroundImage="/images/backgrounds/fondoempresa.jpg"
+        backgroundImage={getAssetPath("/images/backgrounds/fondoempresa.jpg")}
       />
 
       {/* About Content */}
@@ -80,7 +81,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="/images/logo/logo.png" 
+                src={getAssetPath("/images/logo/logo.png")} 
                 alt="Taller Amoruso Inversiones" 
                 className="img-fluid"
               />

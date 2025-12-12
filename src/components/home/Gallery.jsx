@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion as Motion, AnimatePresence } from 'framer-motion';
+import { getAssetPath } from '../../utils/assetHelper';
 import SectionTitle from '../common/SectionTitle';
 import './Gallery.css';
 
@@ -8,12 +9,12 @@ const Gallery = () => {
 
   // Imágenes del taller y trabajos
   const images = [
-    { id: 1, src: '/images/backgrounds/taller.jpg', alt: 'Instalaciones del taller', category: 'Instalaciones' },
-    { id: 2, src: '/images/services/mecanicageneral.png', alt: 'Mecánica general', category: 'Servicios' },
-    { id: 3, src: '/images/services/reparacionmotor.png', alt: 'Reparación de motor', category: 'Servicios' },
-    { id: 4, src: '/images/services/diagnostico.jpg', alt: 'Diagnóstico computarizado', category: 'Servicios' },
-    { id: 5, src: '/images/services/frenos.jpg', alt: 'Sistema de frenos', category: 'Servicios' },
-    { id: 6, src: '/images/backgrounds/motor.jpg', alt: 'Motor reparado', category: 'Trabajos' }
+    { id: 1, src: getAssetPath('/images/backgrounds/taller.jpg'), alt: 'Instalaciones del taller', category: 'Instalaciones' },
+    { id: 2, src: getAssetPath('/images/services/mecanicageneral.png'), alt: 'Mecánica general', category: 'Servicios' },
+    { id: 3, src: getAssetPath('/images/services/reparacionmotor.png'), alt: 'Reparación de motor', category: 'Servicios' },
+    { id: 4, src: getAssetPath('/images/services/diagnostico.jpg'), alt: 'Diagnóstico computarizado', category: 'Servicios' },
+    { id: 5, src: getAssetPath('/images/services/frenos.jpg'), alt: 'Sistema de frenos', category: 'Servicios' },
+    { id: 6, src: getAssetPath('/images/backgrounds/motor.jpg'), alt: 'Motor reparado', category: 'Trabajos' }
   ];
 
   const openLightbox = (image) => {

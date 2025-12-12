@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion as Motion } from 'framer-motion';
+import { getAssetPath } from '../utils/assetHelper';
 import Hero from '../components/common/Hero';
 import SectionTitle from '../components/common/SectionTitle';
 import ServiceCard from '../components/services/ServiceCard';
@@ -59,7 +60,7 @@ const Services = () => {
       <Hero
         title="Nuestros Servicios"
         description="Soluciones completas de mantenimiento y reparación automotriz con la más alta calidad y tecnología de punta."
-        backgroundImage="/images/backgrounds/fondoservicios.jpg"
+        backgroundImage={getAssetPath("/images/backgrounds/fondoservicios.jpg")}
       />
 
       {/* Services Content */}

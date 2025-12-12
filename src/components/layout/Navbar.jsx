@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion as Motion } from 'framer-motion';
+import { getAssetPath } from '../../utils/assetHelper';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
         <div className="navbar-content">
           <Link to="/" className="navbar-brand">
             <img 
-              src="/images/logo/logo.png" 
+              src={getAssetPath("/images/logo/logo.png")} 
               alt="Amoruso Inversiones Logo" 
               className="navbar-logo"
             />
